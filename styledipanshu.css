@@ -1,0 +1,309 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fffaf8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Header */
+.site.header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 5%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo.container h1 {
+    color: darkred;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* 3. Navigation */
+.nav.links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav.links a:hover {
+    color: darkred;
+}
+
+/* 4. Search Bar */
+search form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+search label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="search"] {
+    width: 190px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    background: #fffaf8;
+}
+
+input[type="search"]:focus {
+    border-color: darkred;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 20px;
+    background: darkred;
+    color: white;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #8b0000;
+    transform: translateY(-2px);
+}
+
+/* 5. Hero Section */
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-content img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 6. Fashion Sections */
+section[class*="fashion-container"] {
+    padding: 55px 4%;
+    text-align: center;
+}
+
+section[class*="fashion-container"] h2,
+.aboutus-section h2,
+.contactus-section h2 {
+    color: darkred;
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* 7. Product Image Rows */
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.photo-titem {
+    flex: 0 1 180px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-titem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(139, 0, 0, 0.16);
+}
+
+.photo-titem img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.captions {
+    padding: 12px 4px 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 8. Women's Fashion */
+.womens.fashion-container {
+    background: #fff0ed;
+}
+
+/* 9. Kids' Fashion */
+.kids.fashion-container {
+    background: #fffaf8;
+}
+
+.kids.fashion-container > h1 {
+    margin: 40px auto;
+    padding: 0 15px;
+    max-width: 1000px;
+    color: darkred;
+    font-size: clamp(25px, 4vw, 42px) !important;
+    line-height: 1.4;
+}
+
+/* 10. About Us */
+.aboutus-section {
+    background: #ffffff;
+    padding: 55px 8%;
+    margin-top: 35px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.aboutus-section h2 {
+    text-align: center;
+}
+
+.aboutus-section p {
+    margin-bottom: 18px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* 11. Contact Us */
+.contactus-section {
+    background: #fff0ed;
+    padding: 55px 8%;
+    text-align: left;
+}
+
+.contactus-section h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contactus-section p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.contactus-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 15px 0 30px;
+}
+
+.contactus-section ul a {
+    color: darkred;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contactus-section ul a:hover {
+    text-decoration: underline;
+}
+
+/* 12. Order Form */
+.corder-from {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.corder-from label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.corder-from input,
+.corder-from textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fffaf8;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.corder-from input:focus,
+.corder-from textarea:focus {
+    border-color: darkred;
+}
+
+.corder-from textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.corder-from button {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+/* 13. Footer */
+.site-footer {
+    background: #2b1717;
+    color: #f5eaea;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 7px 0;
+    font-size: 14px;
+}   
